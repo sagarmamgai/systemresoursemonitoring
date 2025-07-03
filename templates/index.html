@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Monitor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>📊 System Monitor Dashboard</h1>
+    <div class="overview">
+        <div class="card" id="cpu">CPU Usage: --%</div>
+        <div class="card" id="memory">Memory Usage: --%</div>
+        <div class="card" id="disk">Disk Usage: --%</div>
+        <div class="card" id="net">Net: -- Sent / -- Recv</div>
+    </div>
+    <h2>⚙️ Top Processes</h2>
+    <ul id="processes"></ul>
+
+<bR></bR>
+<BR></BR>
+    <h2>🚨 Alerts</h2>
+<div id="alerts" class="alert-box"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
